@@ -11,6 +11,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
+	
 	<body class="is-preload">
 
 		<!-- Wrapper -->
@@ -138,6 +139,24 @@
 										</article>
 									</div>
 								</section>
+								
+
+								<div id="container"></div>
+								<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+								<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+								<script>
+								var gitment = new Gitment({
+									id: '页面 ID', // 可选。默认为 location.href
+									owner: 'TushengdongNJU',
+									repo: 'tushengdongnju.github.io',
+									oauth: {
+    									client_id: '6bc5f2c25d55eb67d050',
+    									client_secret: 'af1dfd57616d052809838ee38181d5721b2b184d',
+											},
+									})
+								gitment.render('container')
+								</script>
+
 
 						</div>
 					</div>
