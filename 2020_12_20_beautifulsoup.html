@@ -23,28 +23,29 @@
 							<!-- Header -->
 								<header id="header">
 									<a href="index.html" class="logo"><strong>sfcfpl</strong> Personal Blog</a>
+									
 								</header>
 
 							<!-- Content -->
 								<section>
 									<header class="main">
-										<h1>文章</h1>
+										<h1>爬虫中Beautifulsoup使用方式</h1>
 									</header>
 
-									<span class="image main"><img src="images/pic11.jpg" alt="" /></span>
 
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit.</p>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.</p>
-									<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
-
+									<p>最近在做爬虫，碰到抓一个表格的时候难住我了。表格中有的项一一对应，有的项一对多，有的项多对多，导致其html代码结构不一致，需要用beautifulsoup中的一些遍历方法。</p>
+									<p></p>
 									
+									<!--span class="image main"><img src="images/pic11.jpg" alt="" /></span-->
 
 									<hr class="major" />
-									<h1_5>2020年12月</h1_5>
-									<p></p>
-									<a href='2020_12_21_kaoyan.html'><h3>2020.12.21 又是一年考研临近</h3></a>
-									<a href='2020_12_20_beautifulsoup.html'><h3>2020.12.20 爬虫中Beautifulsoup使用方式</h3></a>
-									<a href='2020_12_20_cyberpunk.html'><h3>2020.12.20 赛博朋克2077通关后的个人想法</h3></a>
+									<p>soup中有四种对象 Tag, NavigableString, BeautifulSoup, Comment。</p>
+									<pre><code>soup = BeautifulSoup('< b class="boldest">Extremely bold< /b>')
+tag = soup.b
+type(tag)
+# < class 'bs4.element.Tag'></code></pre>
+
+								
 								</section>
 
 						</div>
